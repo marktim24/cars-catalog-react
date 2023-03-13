@@ -1,0 +1,18 @@
+.item {
+	border: 1px solid white;
+	width: 90%;
+	height: 320px;
+	margin: 0 auto;
+}
+
+.image {
+	> img {
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		width: 100%;
+	}
+}
+
+.info {
+}
