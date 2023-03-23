@@ -1,0 +1,18 @@
+.form {
+	display: flex;
+	flex-direction: column;
+	input {
+		margin: 5px;
+		padding: 10px 20px;
+		border: transparent;
+		outline: transparent;
+		border-radius: 50px;
+		border: 1px solid transparent;
+		&:focus {
+			border-color: blue;
+		}
+	}
+	button {
+		border-radius: 50px;
+	}
+}
