@@ -1,5 +1,5 @@
 Arguments: 
-  /opt/homebrew/Cellar/node/19.7.0/bin/node /opt/homebrew/bin/yarn add @
+  /opt/homebrew/Cellar/node/19.7.0/bin/node /opt/homebrew/bin/yarn add typescriptyarn add -D typescript @types/node @types/react @types/react-dom @types/jest
 
 PATH: 
   /opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/dotnet:~/.dotnet/tools:/opt/homebrew/bin:/opt/homebrew/sbin
@@ -14,8 +14,8 @@ Platform:
   darwin arm64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@: Request "https://registry.yarnpkg.com/@" returned a 405
-      at params.callback [as _callback] (/opt/homebrew/lib/node_modules/yarn/lib/cli.js:66154:18)
+  Error: https://registry.yarnpkg.com/typescriptyarn: Not found
+      at params.callback [as _callback] (/opt/homebrew/lib/node_modules/yarn/lib/cli.js:66145:18)
       at self.callback (/opt/homebrew/lib/node_modules/yarn/lib/cli.js:140890:22)
       at Request.emit (node:events:512:28)
       at Request.<anonymous> (/opt/homebrew/lib/node_modules/yarn/lib/cli.js:141862:10)
@@ -40,7 +40,9 @@ npm manifest:
   	"dependencies": {
   		"react": "^18.2.0",
   		"react-dom": "^18.2.0",
-  		"react-intl-number-format": "^1.1.1"
+  		"react-hook-form": "^7.43.8",
+  		"react-intl-number-format": "^1.1.1",
+  		"react-router-dom": "^6.9.0"
   	},
   	"devDependencies": {
   		"@types/react": "^18.0.27",
@@ -417,6 +419,11 @@ Lockfile:
       "@jridgewell/resolve-uri" "3.1.0"
       "@jridgewell/sourcemap-codec" "1.4.14"
   
+  "@remix-run/router@1.4.0":
+    version "1.4.0"
+    resolved "https://registry.yarnpkg.com/@remix-run/router/-/router-1.4.0.tgz#74935d538e4df8893e47831a7aea362f295bcd39"
+    integrity sha512-BJ9SxXux8zAg991UmT8slpwpsd31K1dHHbD3Ba4VzD+liLQ4WAMSxQp2d2ZPRPfN0jN2NPRowcSSoM7lCaF08Q==
+  
   "@types/prop-types@*":
     version "15.7.5"
     resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.5.tgz#5f19d2b85a98e9558036f6a3cacc8819420f05cf"
@@ -774,6 +781,11 @@ Lockfile:
       loose-envify "^1.1.0"
       scheduler "^0.23.0"
   
+  react-hook-form@^7.43.8:
+    version "7.43.8"
+    resolved "https://registry.yarnpkg.com/react-hook-form/-/react-hook-form-7.43.8.tgz#189fe4fb31e15c280b529cc3041249ed12108d75"
+    integrity sha512-BQm+Ge5KjTk1EchDBRhdP8Pkb7MArO2jFF+UWYr3rtvh6197khi22uloLqlWeuY02ItlCzPunPsFt1/q9wQKnw==
+  
   react-intl-number-format@^1.1.1:
     version "1.1.1"
     resolved "https://registry.yarnpkg.com/react-intl-number-format/-/react-intl-number-format-1.1.1.tgz#5a3e0afc82829843a83a460296c6945c7b596e6f"
@@ -785,6 +797,21 @@ Lockfile:
     version "0.14.0"
     resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.14.0.tgz#4e02825378a5f227079554d4284889354e5f553e"
     integrity sha512-wViHqhAd8OHeLS/IRMJjTSDHF3U9eWi62F/MledQGPdJGDhodXJ9PBLNGr6WWL7qlH12Mt3TyTpbS+hGXMjCzQ==
+  
+  react-router-dom@^6.9.0:
+    version "6.9.0"
+    resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-6.9.0.tgz#dd8b4e461453bd4cad2e6404493d1a5b4bfea758"
+    integrity sha512-/seUAPY01VAuwkGyVBPCn1OXfVbaWGGu4QN9uj0kCPcTyNYgL1ldZpxZUpRU7BLheKQI4Twtl/OW2nHRF1u26Q==
+    dependencies:
+      "@remix-run/router" "1.4.0"
+      react-router "6.9.0"
+  
+  react-router@6.9.0:
+    version "6.9.0"
+    resolved "https://registry.yarnpkg.com/react-router/-/react-router-6.9.0.tgz#0f503d9becbc62d9e4ddc0f9bd4026e0fd29fbf5"
+    integrity sha512-51lKevGNUHrt6kLuX3e/ihrXoXCa9ixY/nVWRLlob4r/l0f45x3SzBvYJe3ctleLUQQ5fVa4RGgJOTH7D9Umhw==
+    dependencies:
+      "@remix-run/router" "1.4.0"
   
   react@^18.2.0:
     version "18.2.0"
